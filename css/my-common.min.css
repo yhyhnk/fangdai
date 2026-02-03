@@ -222,10 +222,10 @@ strong {
 .ui-bar[skin~=title] {
     height: 40px;
     padding: 0;
-    -webkit-box-shadow: 0 1px 0 #229bdf inset;
-    border-top: 1px solid #46bfff;
-    border-bottom: 1px solid #0062a0;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#229bdf), to(#008cd7))
+    -webkit-box-shadow: none;
+    border-top: 1px solid #008800;
+    border-bottom: 1px solid #008800;
+    background: #008800
 }
 
 .ui-bar[skin~=title] .left,
@@ -376,7 +376,7 @@ strong {
 .ui-list .list-item .detail .atc-title {
     display: block;
     margin: 0;
-    color: #018dd7;
+    color: #666;
     font-size: 14px;
     font-weight: 700;
     line-height: 33px
@@ -458,7 +458,8 @@ strong {
     font-weight: 700;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .38);
     border-radius: 4px;
-    border: 1px solid
+    border: 1px solid;
+    cursor: pointer
 }
 
 .ui-btn[skin~=mini] {
@@ -484,7 +485,7 @@ strong {
     position: relative;
     overflow: visible;
     left: 10px;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#229bdf), to(#008cd7));
+    background: #008800;
     background-size: auto 34px;
     border: 0
 }
@@ -514,18 +515,17 @@ strong {
 }
 
 .ui-btn[skin~=blue] {
-    border-color: #0369aa;
-    border-radius: 4px;
-    box-shadow: 0 1px 0 #40c1ff inset;
-    background: #26a7ef;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#26a7ef), to(#018cd7))
+    border-color: #008800;
+    border-radius: 0;
+    box-shadow: none;
+    background: #008800
 }
 
 .ui-btn[skin~=blue].active,
 .ui-btn[skin~=blue].hover {
-    border-color: #0062a0;
+    border-color: #006600;
     box-shadow: none;
-    background: #0170b5
+    background: #006600
 }
 
 .ui-btn[skin~=yellow] {
@@ -1367,7 +1367,12 @@ i {
 .footer {
     text-align: center;
     padding: 20px 0;
-    font-size: 14px
+    font-size: 14px;
+    color: #444
+}
+
+.footer a {
+    color: #444
 }
 
 .main_content {
@@ -1431,10 +1436,10 @@ i {
         padding-bottom: 5px;
 
 
-    -webkit-box-shadow: 0 1px 0 #229bdf inset;
-    border-top: 1px solid #46bfff;
-    border-bottom: 1px solid #0062a0;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#229bdf), to(#008cd7));
+    -webkit-box-shadow: none;
+    border-top: 1px solid #008800;
+    border-bottom: 1px solid #008800;
+    background: #008800;
     }
 
     .ui-bar[skin~=title] .title {
@@ -1503,6 +1508,7 @@ i {
         font-size: 14px;
         margin: 5px 0;
         height: 1.5em;
+        color: #444;
         line-height: 1.5em;
         overflow: hidden
     }
